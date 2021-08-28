@@ -1,34 +1,44 @@
-document.querySelector(document).ready(function() {
-    let zindex = 10;
-
-    document.querySelector("div.card").click(function(e) {
-        e.preventDefault();
-
-        let isShowing = false;
-
-        if (document.querySelector(this).classList.contains("show")) {
-            isShowing = true;
-        }
-
-        if (document.querySelector("div.cards").classList.contains("showing")) {
-
-            document.querySelector("div.card.show").classList.remove("show");
-
-            if (isShowing) {
-
-                document.querySelector("div.cards").classList.remove("showing");
-            } else {
-
-                document.querySelector(this).css({ zIndex: zindex }).classList.add("show");
-            }
-
-            zindex++;
+$(document).ready(function(){
+    var zindex = 10;
+    
+    $("div.card").click(function(e){
+      e.preventDefault();
+  
+      var isShowing = false;
+  
+      if ($(this).hasClass("show")) {
+        isShowing = true
+      }
+  
+      if ($("div.cards").hasClass("showing")) {
+        // a card is already in view
+        $("div.card.show")
+          .removeClass("show");
+  
+        if (isShowing) {
+          // this card was showing - reset the grid
+          $("div.cards")
+            .removeClass("showing");
         } else {
-
-            document.querySelector("div.cards").classList.add("showing");
-            document.querySelector(this).css({ zIndex: zindex }).classList.add("show");
-
-            zindex++;
+          // this card isn't showing - get in with it
+          $(this)
+            .css({zIndex: zindex})
+            .addClass("show");
+  
         }
+  
+        zindex++;
+  
+      } else {
+        // no cards in view
+        $("div.cards")
+          .addClass("showing");
+        $(this)
+          .css({zIndex:zindex})
+          .addClass("show");
+  
+        zindex++;
+      }
+      
     });
-});
+  });
