@@ -1,248 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Indigo</title>
-    <link rel="stylesheet" type="text/css" href="./style.css">
-    <script src="script.js"></script>
-    <script src="./event.js"></script>
-
-    <!-- favicon -->
-    <link rel="shortcut icon" type="image/jpg" href="/img/logo.png" />
-    <!-- favivon end -->
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+<link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
 </head>
-
 <body>
-    <!-- dont touch -->
-    <header class="header">
-        <div class="container">
-            <nav class="navbar">
-                <h1 class="brand">
-                    <a href="./index.html" class="brand-link">
-                        <!-- <img class="logo" src="./TILWhite.jpg" alt="" srcset=""> -->
-                        Team Indigo
-                    </a>
-                </h1>
-                <button type="button" class="burger" id="burger">
-                    <span class="burger-line"></span>
-                    <span class="burger-line"></span>
-                    <span class="burger-line"></span>
-                    <span class="burger-line"></span>
-                </button>
-                <div class="menu" id="menu">
-                    <ul class="menu-inner">
-                        <li class="menu-item active"><a href="#" class="menu-link">Home</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">About Us</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Events</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Blogs</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">join us</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Our team</a></li>
-                    </ul>
-                </div>
-            </nav>
+    <section class="container">
+        <div class="cont">
+           <div class="card">
+              <div class="content">
+                 <h2>Join us</h2>
+                 <form action="#">
+                    <div class="form-row">
+                       <div class="input-data">
+                          <h4>Name</h2>
+                          <input type="text" required>
+                          <div class="underline"></div>
+                          <!-- <label for=""> Name</label> -->
+                       </div>
+                    </div>
+                    <br>
+                    <div class="form-row">
+                       <h4>Email address</h4>
+                       <div class="input-data">
+                          <input type="text" required>
+                          <div class="underline"></div>
+                          <!-- <label for="">Email Address</label> -->
+                       </div>
+                       <a href="">Join us</a>
+              </div>
+           </div>
         </div>
-    </header>
-
-    <!-- Particles.js div -->
-
-    <div id="particles-js">
-        <div class=" heading ">
-            <h1>Team Indigo</h1 <h3>
-            Lorem ipsum dolor sit.
-            </h3>
-        </div>
-    </div>
-
-    <!-- Import Particles.js and app.js files -->
-    <script src="particles.js-master/particles.js ">
-    </script>
-    <script src="/particles.js-master/demo/js/app.js ">
-    </script>
-
-    <!-- <main class="main ">
-        <section class="section ">
-            <div class="container ">
-                
-            </div>
         </section>
-    </main> -->
-    <!-- dont touch -->
-
-    <!-- event -->
-    <div class="cards ">
-
-        <div class="card ">
-            <div class="card__image-holder ">
-                <img class="card__image " src="https://source.unsplash.com/300x225/?wave " alt="wave " />
-            </div>
-            <div class="card-title ">
-                <a href="# " class="toggle-info btn ">
-                    <span class="left "></span>
-                    <span class="right "></span>
-                </a>
-                <h2>
-                    Card title
-                    <small>Image from unsplash.com</small>
-                </h2>
-            </div>
-            <div class="card-flap flap1 ">
-                <div class="card-description ">
-                    This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
-                </div>
-                <div class="card-flap flap2 ">
-                    <div class="card-actions ">
-                        <a href="# " class="btn ">Read more</a>
-                    </div>
-                </div>
-            </div>
+    <section class="photogal">
+        <div class="box">
+            <h2>Photo gallery</h2>
+            <span style="--i:1;"><img src="img/DSC_0116.jpg" alt="" ></span>
+            <span style="--i:2;"><img src="img/DSC_0001.JPG" alt="" ></span>
+            <span style="--i:3;"><img src="img/WA0083.jpg" alt="" ></span>
+            <span style="--i:4;"><img src="img/DSC_0032.jpg" alt="" ></span>
+            <span style="--i:5;"><img src="img/DSC_0061.JPG" alt="" ></span>
+            <span style="--i:6;"><img src="img/DSC_0023.jpg" alt="" ></span>
+            <span style="--i:7;"><img src="img/DSC_0032.jpg" alt="" ></span>
+            <span style="--i:8;"><img src="img/WA0083.jpg" alt="" ></span>
         </div>
-
-        <div class="card ">
-            <div class="card__image-holder ">
-                <img class="card__image " src="https://source.unsplash.com/300x225/?beach " alt="beach " />
-            </div>
-            <div class="card-title ">
-                <a href="# " class="toggle-info btn ">
-                    <span class="left "></span>
-                    <span class="right "></span>
-                </a>
-                <h2>
-                    Card title
-                    <small>Image from unsplash.com</small>
-                </h2>
-            </div>
-            <div class="card-flap flap1 ">
-                <div class="card-description ">
-                    This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
-                </div>
-                <div class="card-flap flap2 ">
-                    <div class="card-actions ">
-                        <a href="# " class="btn ">Read more</a>
-                    </div>
-                </div>
-            </div>
+    </section>
+    <footer>
+        <div class="sec">
+        <div class="numa">
+            <img src="img/Untitled_design__2_-removebg-preview.png" alt="" width="120px" >
+            <ul>
+            <li>Team Indigo is a students' society under the Gyan Ganga Group.</li> 
+            <li>Various technical, as well as non-technical events </li> 
+            <li>and activities are conducted by the society </li> 
+            <li>Mail us-teamindigoggits@gmail.com</li>
+            </ul>
         </div>
-
-        <div class="card ">
-            <div class="card__image-holder ">
-                <img class="card__image " src="https://source.unsplash.com/300x225/?mountain " alt="mountain " />
-            </div>
-            <div class="card-title ">
-                <a href="# " class="toggle-info btn ">
-                    <span class="left "></span>
-                    <span class="right "></span>
-                </a>
-                <h2>
-                    Card title
-                    <small>Image from unsplash.com</small>
-                </h2>
-            </div>
-            <div class="card-flap flap1 ">
-                <div class="card-description ">
-                    This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
-                </div>
-                <div class="card-flap flap2 ">
-                    <div class="card-actions ">
-                        <a href="# " class="btn ">Read more</a>
-                    </div>
-                </div>
-            </div>
+        <br>
+        <div class="numb">
+            <h2> Useful links</h2>
+            <ul>
+                <li><a target="blank" href="https://www.instagram.com/teamindigoggits/">Instagram</a></li>
+                <li><a target="blank" href="https://mobile.twitter.com/ClubGgits">Twitter</a></li>
+                <li><a target="blank" href="https://www.linkedin.com/company/team-indigo-ggits/">Linkedln</a></li>
+                <li><a target="blank" href="https://teamindigoggits.blogspot.com/">Blogspot</a></li>
+            </ul>
         </div>
-
-        <div class="card ">
-            <div class="card__image-holder ">
-                <img class="card__image " src="https://source.unsplash.com/300x225/?field " alt="field " />
-            </div>
-            <div class="card-title ">
-                <a href="# " class="toggle-info btn ">
-                    <span class="left "></span>
-                    <span class="right "></span>
-                </a>
-                <h2>
-                    Card title
-                    <small>Image from unsplash.com</small>
-                </h2>
-            </div>
-            <div class="card-flap flap1 ">
-                <div class="card-description ">
-                    This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
-                </div>
-                <div class="card-flap flap2 ">
-                    <div class="card-actions ">
-                        <a href="# " class="btn ">Read more</a>
-                    </div>
-                </div>
-            </div>
+        <br>
+        <div class="numc">
+          <h2>Address</h2>
+            
+            <ul>
+                <li>Student society under the Gyan Ganga Group</li>
+                <li>P.O. Tilwara Ghat, Near Bargi Hills</li>
+                <li>Jabalpur 482003</li>
+                <br>
+            </ul>
         </div>
-
-        <div class="card ">
-            <div class="card__image-holder ">
-                <img class="card__image " src="https://source.unsplash.com/300x225/?water " alt="water " />
-            </div>
-            <div class="card-title ">
-                <a href="# " class="toggle-info btn ">
-                    <span class="left "></span>
-                    <span class="right "></span>
-                </a>
-                <h2>
-                    Card title
-                    <small>Image from unsplash.com</small>
-                </h2>
-            </div>
-            <div class="card-flap flap1 ">
-                <div class="card-description ">
-                    This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
-                </div>
-                <div class="card-flap flap2 ">
-                    <div class="card-actions ">
-                        <a href="# " class="btn ">Read more</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card ">
-            <div class="card__image-holder ">
-                <img class="card__image " src="https://source.unsplash.com/300x225/?river " alt="river " />
-            </div>
-            <div class="card-title ">
-                <a href="# " class="toggle-info btn ">
-                    <span class="left "></span>
-                    <span class="right "></span>
-                </a>
-                <h2>
-                    Card title
-                    <small>Image from unsplash.com</small>
-                </h2>
-            </div>
-            <div class="card-flap flap1 ">
-                <div class="card-description ">
-                    This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
-                </div>
-                <div class="card-flap flap2 ">
-                    <div class="card-actions ">
-                        <a href="# " class="btn ">Read more</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-
     </div>
-    <script src="event.js " type="text/JavaScript "></script>
-    <!-- footer start -->
-    <!-- footer ends -->
-
-
-    < /body>
-        <!-- <script src="./script.js " type="text/JavaScript ">
-    </script> -->
-        <script src="./event.js " type="text/JavaScript "></script>
-
+    <br>
+    <p class="end">All right reserved by ©TeamIndigo GGITS</p> <br>
+</footer>
+</body>
 </html>
